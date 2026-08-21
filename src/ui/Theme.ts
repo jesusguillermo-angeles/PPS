@@ -1,0 +1,2 @@
+export const THEME={pink:0xf28bbd,pink2:0xffb6d6,pinkDark:0x8b365e,ink:0x171219,blue:0x132036,blue2:0x223a5c,cream:0xfff5f0,silver:0xd8d8de,gray:0x777681,gold:0xf2d46b};
+export function panel(scene:Phaser.Scene,x:number,y:number,w:number,h:number,color=THEME.ink,stroke=THEME.silver){const g=scene.add.graphics();g.fillStyle(color,1).fillRect(x,y,w,h);g.lineStyle(2,stroke,1).strokeRect(x,y,w,h);return g;}
