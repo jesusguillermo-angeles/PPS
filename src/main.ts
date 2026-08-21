@@ -1,0 +1,3 @@
+import Phaser from 'phaser';
+import {BootScene} from './scenes/BootScene'; import {HomeScene} from './scenes/HomeScene'; import {CollectionScene} from './scenes/CollectionScene'; import {EventsScene} from './scenes/EventsScene'; import {MissionsScene} from './scenes/MissionsScene'; import {GachaScene} from './scenes/GachaScene'; import {ExploreScene} from './scenes/ExploreScene';
+new Phaser.Game({type:Phaser.AUTO,parent:'game',width:918,height:707,backgroundColor:'#171219',scale:{mode:Phaser.Scale.FIT,autoCenter:Phaser.Scale.CENTER_BOTH},render:{antialias:true,pixelArt:false},scene:[BootScene,HomeScene,CollectionScene,EventsScene,MissionsScene,GachaScene,ExploreScene]});
